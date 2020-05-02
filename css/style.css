@@ -1,0 +1,321 @@
+aside {
+	width: 30%;
+	float: right;
+	/* padding-top: 50px; TAR BORT PADDING 2019-08-26 */
+}
+
+body {
+	border: 2px black solid;
+	background: linear-gradient(to bottom right, rgba(176, 53, 53, 0.5), rgba(176, 53, 53, 0.1));
+	margin: 0 auto;
+	width: 80%;
+	max-width: 2000px;
+}
+p{
+	font-family:verdana;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:helvetica;
+}
+section p{
+	text-align: justify; 
+}
+
+h2{
+	font-size: 28px;
+	color: #702e2e;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}h3{
+	font-size: 20px;
+	color: #912d2d;
+}
+aside h1, aside h2 { /* ÄNDRING GJORD 2019-08-26 */
+	margin-bottom: 2px;
+}
+aside h3, aside h4, aside h5{ /* ÄNDRING GJORD 2019-08-26 */
+	margin-bottom: 1px;
+}
+#navigation ul li a:hover{
+	background-color: #945454;
+}
+fieldset {
+	border-radius: 15px;
+}
+iframe{
+	overflow:scroll;
+	border:none;
+}
+footer {
+	margin:auto auto;
+    width: 100%;
+	background-color: #eee;
+    text-align: center;
+	margin-top: 100px;
+}
+button {
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  /* width: 50px; */
+  /* height:25px; */
+  border-radius: 3px;
+  /* box-shadow: 0 9px #999; */
+}
+
+button:hover {
+	background-color: #783e3a;
+	color:#fff;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+header {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+img {
+	width: 100%;
+	/* float: right; */
+}
+
+html {
+	background-color: #eee;
+}
+
+legend {
+	text-align: center;
+	font-size:22px;
+}
+
+main {
+	margin-left: 25px;
+	margin-bottom: 25px;
+	display: inline-block;
+	width: calc(100% - 200px);
+}
+
+nav {
+	width: 100px;
+}
+orderedList li {
+	
+	
+} 
+section {
+	width: 66%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+aside img {
+	border-radius: 5px;
+}
+
+aside p {
+	font-style: italic;
+}
+header h1:first-letter{
+	color:#873535;
+}
+header h1 {
+	font-size: 60px;
+}
+
+header p {
+	/* color: rgba(116, 135, 155, 1); */
+	color: #123;
+	font-size: 20px;
+}
+
+header img {
+	width: 100%;
+}
+
+header + button {
+	display: none;
+}
+
+ol + h3 {
+	text-align: center;
+	padding-top: 50px;
+}
+
+nav ul li {
+	float: left;
+	clear: left;
+	border: 1px black solid;
+	border-radius: 5px;
+	background-color: #E4E4E4;
+	margin: 5px;
+	text-align: center;
+	margin-left: -30px;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: inline-block; /* Anchor links or 's are inline elements, they can't have paddings. Making them inline-block must work.*/
+	padding: 10px;
+	width: 100px;
+}
+
+section ol {
+
+	float: left;
+	margin: 25px;
+	font-size: 1.2em;
+}
+
+section p {
+	font-size: 1.2em;
+}
+
+section img {
+	/* margin-top: 100px; */
+	width: 70%;
+}
+
+.full-img-width{	
+	width:100%;
+}
+
+.image_gallery li:hover {
+	background-color: #777;
+}
+
+.klickbar {
+	text-decoration: underline;
+	color: #0000EE;
+}
+
+.monster {
+	width: 100%;
+	height: 45px;
+	background-image: url("../img/monster.jpg");
+	background-repeat: repeat-x;
+}
+.track-list-iframe{
+	width: 560px; 
+	height: 300px;
+}
+
+#content a:hover {
+	color: #325199;
+}
+#content a{
+	font-size: 18px;
+}
+
+#hamburger {
+	display: none;
+}
+#midsommar iframe{
+	width: 560px;
+	height: 315px;
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		width: 100%;
+		border: 0px;
+	}
+	
+	footer {
+		width: 100%;
+	}
+	
+	header h1 {
+		font-size: 50px;
+	}
+	.track-list-iframe {
+		width: 490px;
+		height: 240px;
+		
+	}
+
+	.iframe-google-map{
+		width: 550px;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	h2{
+		font-size: 22px;
+	}
+	header h1 {
+		font-size: 40px;
+	}
+	#midsommar iframe{
+		width: 400px;
+		height: 250px;
+	}
+	.track-list-iframe {
+		width: 400px;
+		height: 240px;
+	}
+	.iframe-google-map{
+		width: 350px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+
+	header + button {
+		display: block;
+		float: right;
+		margin-right: 10px;
+	}
+
+	header h1 {
+		font-size: 32px;
+	}
+	
+	header p {
+		font-size: 18px;
+	}
+	
+	main {
+		width: 90%;
+	}
+	
+	nav {
+		display: none;
+		float: right;
+	}
+
+	ul {
+		margin-top: 40px;
+	}
+
+	ul li {
+		margin: 0px;
+
+	}
+			
+	#hamburger {
+		display: inline;
+		width: 30px;
+	}
+	#midsommar iframe{
+		width: 280px;
+		height: 157px;
+	}
+	.track-list-iframe {
+		width: 270px;
+		height: 150px;
+	}
+	.iframe-google-map{
+		width: 250px;
+		height: 150px;
+	}
+}

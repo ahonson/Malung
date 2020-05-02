@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8"/>
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="description" content="Malungs Hembygsdörening har en gammelgård med traditionella stugor med kulturhistoriskt värde och inredning. Utställningarna i stugorna visar traktens historia"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Malungs hembygdsförening | Byggnader</title>
+    <link rel="shortcut icon" type="image/png" href="img/favico.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style>
+		section {
+			width: 100%;
+		}
+		
+		ol .klickbar:hover{
+			cursor: pointer;
+		}
+		
+		.modal {
+			display: none; /* Hidden by default */
+			z-index: 1; /* Sit on top */
+			position: fixed; /* Stay in place */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+		}
+		
+		.modal-content {
+			width: 80%;
+			background-color: #fefefe;
+			margin: 5% auto;
+			padding: 20px;
+		}
+		
+		.close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: black;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+	
+<body>
+<header>
+	<div class="monster"></div>
+	<div id ="welcome">
+		<h1>Malungs hembygdsförening</h1>
+		<p>Välkommen till Malungs hembygdsförening och Malungs hembygdsgård</p>	
+	</div>
+	
+</header>
+<button type="button" onclick="hamburger()"><img id="hamburger" src="img/hamburger.png" alt="hamburgarikon för mobil navigation"></button>
+<nav id="navigation">
+	<ul>
+		<li class="link"><a href="index.html">Hem</a></li>
+		<li class="link"><a href="historik.html">Historik</a></li>
+		<li class="link"><a href="verksamhet.html">Verksamhet</a></li>
+		<li class="link"><a href="byggnader.html">Byggnader</a></li>
+		<li class="link"><a href="kontakt.html">Kontakt</a></li>
+	</ul>
+</nav>
+<main>
+	<h1>Byggnader</h1>
+	<section>
+	<h2>Stugorna på Gammelgården</h2>
+		<p>Malungs gammelgård har många gamla byggnader som flyttats till nuvarande plats från andra håll i bygden.</p>
+		<p>Malungs hembygdsförening bildades 1919. Några år senare började man sätta upp gamla hus på Hundholen, där det från början låg ett grustag och ett 
+		sågverk. Målet var att visa hur en storbondegård kunde se ut under 1600- och 1700-talen. Husen kommer från olika delar av Malungs socken och 
+		hembygdsföreningen förvaltar cirka 30 olika byggnader. Arbetet med att sätta upp hus på Hundholen pågår fortfarande.</p>
+		<p>År 1929 nedtecknades dessa ord om Malungs hembygdsgård i <a href="http://runeberg.org/hemarv/0204.html" target="_blank">Hembygdens arv</a>:</p>
+		<blockquote>Kulturhistoriska byggnader: Gård å Hundholen uppförd av från olika byar flyttade byggnader, däribland två loftbodar, fähus, kornlada, 
+		stall och stolphärbre. (Stugan utgöres av en kopia.) Till gammelgården hör även en skvaltkvarn, som ligger kvar på sin gamla plats. Historik: 
+		Bildad 1919, gården grundlagd 1923. Museiföreståndare: Handlanden E. Thorolf, Malung.</blockquote>
+		<p>Se nedan Malungs gammelgårds alla byggnader och information om dessa. Klicka på länkarna nedan för att få mer information om husen.</p>
+	</section>
+	<section>
+		<ol class="image_gallery">
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Parstuga</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Enkelstuga_1</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Olaloftet</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Sänghärbre</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Brittloftet</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Ladugård</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Trösklada-Vedbod</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Loftbod</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Enkelstuga_2</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Svarvstuga</li>
+			<li class="klickbar" onmouseover="updateImg(this)" onclick="showModal(this)">Loftbod-Stall</li>
+			<li onmouseover="updateImg(this)">Stolphärbre_1</li>
+			<li onmouseover="updateImg(this)">Barklada</li>
+			<li onmouseover="updateImg(this)">Smedja</li>
+			<li onmouseover="updateImg(this)">Jannesstugan</li>
+			<li onmouseover="updateImg(this)">Stolphärbre_2</li>
+			<li onmouseover="updateImg(this)">Garage</li>
+			<li onmouseover="updateImg(this)">Torkhus</li>
+			<li onmouseover="updateImg(this)">Stuga</li>
+			<li onmouseover="updateImg(this)">Förrådsbyggnad_1</li>
+			<li onmouseover="updateImg(this)">Båthus</li>
+			<li onmouseover="updateImg(this)">Fjösstuga</li>
+			<li onmouseover="updateImg(this)">Stolphärbre_3</li>
+			<li onmouseover="updateImg(this)">Förrådsbyggnad_2</li>
+		</ol>
+		<h3 id="bildtitel">Parstuga</h3>
+		<img id = "currentImg" src = "img/Parstuga.jpg" alt="Malungs hembygdsförening och gammelgårdens stugor">
+		<!-- onmouseover update image -->
+	</section>
+</main>
+	<!-- The Modals -->
+<div id="Parstuga" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Parstuga - Rekonstruktion av Jersstugan</h2>
+	<p>Parstuga uppförd 1926 efter rekonstruktionen av Jersstugan från V. Fors i Malung.</p>
+	<p>Jersstugan var i så dåligt skick att den inte kunde flyttas. All användbar inredning som kunde utnyttjas sattes in i den nya stugan, bl.a. fönster och 
+	dörrar. Takmålningen i östra stugan efter Jufvas Anders Ersson från Leksand rekonstruerades efter de orginalplankor som fanns. Dörrarna med vackert målade 
+	rosor och ådrade foder kunde flyttas och sättas in.</p>
+	<p>I övrigt finns i denna stuga vackert målade sängar och skåp med typisk dekor för målare från socknarna kring Siljan, allmänt kallat dalmåleri. En 
+	bonadmålning av Jufvas Anders Ersson från Leksand samt två målningar av en målare från Boda finns också uppsatta i stugan.</p>
+	<p>Den västra stugan eller dagligstugan, som var den egentliga bostaden, har omålad inredning. Stugan med väggfasta sängar och bänkar visar 1700-talets 
+	boendemiljö.</p>
+	<img src="img/Parstuga_01.jpg" alt="Parstugans inre">
+	<img src="img/Parstuga_02.jpg" alt="utanför Parstugan">
+	<img src="img/Parstuga_03.jpg" alt="Parstugans innerdörrar">
+  </div>
+</div>
+
+<div id="Enkelstuga_1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Enkelstuga - "Lisstuggo"</h2>
+	<p>Liss-stuggo uppförd omkring 1800. Ursprungligen från Olagården i N. Mon. Senast flyttades den till Länsmans Olof Erikssons gård i samma by. Stugan 
+	användes förr som sommarstuga. Stugans inredning är ett gott exempel på hur många fäbodstugor i malungsområdet var inredda i äldre tid.</p>
+	<img src="img/Enkelstuga_01.jpg" alt="Enkelstugans inre">
+	<img src="img/Enkelstuga_02.jpg" alt="verktyg i Enkelstugan">
+	<img src="img/Enkelstuga_03.jpg" alt="verktyg i Enkelstugan">
+  </div>
+</div>
+
+<div id="Olaloftet" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Loftbod - Olaloftet</h2>
+	<p>Olaloftet är ett dubbelhärbre i två våningar med svalgångar i båda våningarna. Loftet har dendrokronologiskt daterats till 1630. De breda gåtarna och 
+	de höga trösklarna tyder på hög ålder.</p>
+	<p>Skyddsmärken, s.k. trollkors, mot t.ex. häxor och troll finns på dörrar och väggar. Loftet tillhörde ursprungligen Backhansgården i Mellanmon men 
+	flyttades omkring 1880 till Olagården.</p>
+	<img src="img/Olaloftet_01.jpg" alt="Extranubb">
+	<img src="img/Olaloftet_02.jpg" alt="utanför Olaloftet">
+	<img src="img/Olaloftet_03.jpg" alt="gammalt foto på ett litet barn i soffan">
+  </div>
+</div>
+
+<div id="Sänghärbre" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Sänghärbre - Jommoloften</h2>
+	<p>Sänghärbre från 1600-talet flyttat från Vallerås. Ett rum i nedre botten, två i övre, svalgång i båda våningarna. På Wikipedia går att läsa "Loftbod är 
+	ett timrat förrådshus i två plan för förvaring av mat och kläder. Loftboden var det enda hus på den gamla svenska gården som byggdes i två våningar. 
+	Byggnadstypen är känd sedan medeltiden, med utbredning huvudsakligen i mellersta Sverige.</p>
+	<p>Loftbodens övre våning är något indragen och bildar en sval- eller loftgång. Svalgången ligger under tak, är delvis inbyggd och löper längs hela husets 
+	ena långsida; därifrån når man två eller tre små fönsterlösa förrådsrum. Här förvarades ofta kläder och där har man inte sällan inrättat några sängplatser 
+	som nyttjades under sommarhalvåret. Till svalgången kommer man via en utvändig trappa. Undervåningen består av två rum, även dessa är fönsterlösa. Några 
+	trappsteg leder upp till förrådsdörrarna. Här förvarade man mjöl, spannmål, lingon i stora fat, torkad och saltad mat och liknande.</p>
+	<p>Eftersom loftboden var ett knuttimrat hus var det inte ovanligt att boden plockades isär och återuppbyggdes på annan plats. Det finns loftbodar som har 
+	flyttats ett tiotal gånger. Sådana svalgångshus är numera mycket sällsynta i Sverige. En del står på hembygdsgårdar och några har förvandlats till 
+	fritidshus."</p>
+	<img src="img/Saenghaerbre_01.jpg" alt="säng">
+	<em>Säng med förhänge i parstugan på gammelgården. På hyllan står en spädbarnskorg där mycket små barn fick sova.</em>
+  </div>
+</div>
+
+<div id="Brittloftet" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Brittloftet</h2>
+	<p>Loftbod med 'lucku-lir'; Brittloftet, byggt 1750. Mamsell Britta Thelaus, dotter till en skolpräst uppförde loftet som tidigare stått på Brittgården 
+	i Hole. I röstet hittades mynt från 1734 då huset flyttades. Brittloftet var den första byggnaden som sattes upp på hembygdsgården 1922.</p>
+	<img src="img/Brittloftet_01.jpg" alt="pottstol i trä">
+	<em>Pottstol i trä på gammelgården i Malung. I pottstolen satt små barn som var för små att gå på utedasset för att göra sina behov.</em>
+  </div>
+</div>
+
+<div id="Ladugård" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Ladugård</h2>
+	<p>Ladugård, 'Erkaspolfjösä' (Erik, Påls sons ladugård) byggt i början av 1800-talet ursprungligen på Erkaspolgården i Gärdås. Fjöset var i bruk fram 
+	till 1922. Det torde vara ett av de största och ståtligaste i sitt slag i Dalarna. Mycket välbevarad interiör, fyra åsar i taket, breda golvtiljor och 
+	i gaveln en ålderdomlig typ av sänghylla den s.k. hjällen. Här kunde flickorna ostört ta emot nattliga friare.</p>
+	<p>På wikipedia går att läsa om nattfrier: Nattfrieri var en nordeuropeisk sed där unga män nattetid, särskilt på lördags- och söndagnätter, kollektivt 
+	uppvaktade traktens ogifta unga kvinnor. Det var alltså en institutionaliserad form av frieri som förekom på landet i hela Sverige under 1800-talet, och 
+	som varade ända in på 1900-talet i Värmland, Dalarna och Norrland.</p>
+	<p>Seden har tidigare haft en betydligt vidare utbredning. En schlesisk riddare beskriver 1578 hur han i Hertigen av Liegnitz följe under en övernattning 
+	i Nordtyskland bjuds att fullt påklädd övernatta hos en ung adelsdam, en i hans hemtrakter känd sed. Redan under 1600-talet börjar traditionen dö bort hos 
+	de högre stånden. I Danmark dog den ut på 1700-talet, även om den ännu under 1800-levde kvar på Fehmarn, Föhr och Sylt, trots återkommande förbud. Den 
+	holsteinska benämningen har varit fenstre, även i Holland har den förekommit under namnet Fenstring.</p>
+	<p>Under 1800-talet var den vida utbredd i Sverige, Norge och Finland. Från Norge berättas det 1853: "Frieriet försiggår även i de mest välbärgade 
+	familjer endast genom nattbesök, och hos arbetarklassen äga nattfrierier allmänt rum".</p>
+	<img src="img/Ladugaard_01.png" alt="nattfrieri">
+	<em>Bild från Nordiska museet som visar exempel på nattfrieri.</em>
+  </div>
+</div>
+
+<div id="Trösklada-Vedbod" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Trösklada/Vedbod</h2>
+	<p>Pelladan byggd omkring 1750. Ladan fanns ursprungligen på den gamla Pellgården i Gärdås, senare flyttad till Östra Fors. 1924 skänktes ladan till 
+	föreningen.</p>
+	<p>På Wikipedia kan man läsa om trösklador:</p>
+	<blockquote>De äldsta bevarade tröskladorna som är bevarade i Sverige är från början av 1300-talet, bland annat på Zorns gammelgård i Mora. Tröskladan 
+	timras med långdrag utan mossa och med tätt golv av plankor eller klovor. Under 1700-talets senare del och under 1800-talet började man i delar av 
+	Norrland timra polygonala (vanligen 8-kantiga) så kallade rundlogar som är en variant av trösklada.</blockquote>
+	<blockquote>Tröskning är första steget efter skörden där säden bearbetas före skakverket och vindsiktningen, som skiljer stråna och agnarna från kärnan. 
+	Det skedde förr genom att säden blev slagen med en slaga på en loge. En annan traditionell metod för tröskning var att låta åsnor, hästar eller oxar gå i 
+	cirklar på säden utlagd på en hård yta. Golven i trösklogarna gjordes täta och släta, så att inga korn skulle gå till spillo, eller ligga kvar och dra 
+	till sig möss. Golven lämpade sig således för logdans</blockquote>
+	<img src="img/Troesklada_01.jpg" alt="målning från 1300-talet som visar tröskning">
+	<em>Bild från Wikipedia som visar tröskning. Målningen är från cirka 1330-talet.</em>
+  </div>
+</div>
+
+<div id="Loftbod" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Loftbod</h2>
+	<p>Härloftet, dendrokronologiskt daterat till 1609, från Idbäck. Svalgångsloft (sänghärbre) med portlider som står mot ett stallsloft med svalgång. I 
+	sänghärbrets nedre rum finns en unik tvillingsäng av medeltida typ, som förmodligen tillhört ett äldre loft. En liknande säng finns i Skansens äldsta 
+	byggnad, Hedninghuset (även detta från Idbäck), dendrokronologiskt daterat till 1320-talet.  Bilden nedan visar Moragården där Hedninghuset från Idbäck 
+	i Malung återfinns.</p>
+	<img src="img/Loftbod_01.jpg" alt="luftfoto på stugor">
+	<em>Bild från Wikipedia som visar Moragården på Skansen där Hedninghuset från Idbäck ingår.  Foto Johan Fredriksson 2014.</em>
+  </div>
+</div>
+
+<div id="Enkelstuga_2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Enkelstuga</h2>
+	<p>Erkaspolstugan från Gärdås. Stugan har en väl bibehållen interiör från 1858. Väggarna är schablonmålade i ljusa färger och den fasta inredningen; 
+	sängskåp, kärlhylla och bord, är dekorerade av samme målare, av texten över ingångsdörren framgår att det var två målare från Nusnäs i Mora som dekorerat 
+	stugan.</p>
+	<p>På Nationalencyklopedin går att läsa om enkelstuga:</p>
+	<blockquote>Enkelstuga, byggnad bestående av ett bostadsrum med eldstad, ”stugan”, samt förstuga och en liten kammare. Den senare var ursprungligen enbart 
+	ett förrådsrum, i Dalarna kallat ”koven”, men utvecklades så småningom, särskilt i Götaland, till ett separat kök eller till en ”kammare” med egen eldstad. 
+	Enkelstugan var småbönders, torpares samt indelta soldaters och båtsmäns typiska bostad och fick stor spridning med folkökningen och hemmansklyvningen 
+	under slutet av 1700-talet och på 1800-talet. Under 1800-talet utvidgades många enkelstugor genom tillbyggnad av en övervåning.</blockquote>
+	<img src="img/Enkelstuga_04.jpg" alt="planritning över en enkelstuga">
+	<em>Bild från Wikipedia som visar planritning över hur en enkelstuga kunde se ut.</em>
+  </div>
+</div>
+
+<div id="Svarvstuga" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Svarvstuga</h2>
+	<p>Mångsysslaren och bygdeoriginalet Här Lars Perssons (1829-1919) svarvarverkstad. Stugan var tidigare ihopbyggd med Härloftet (9) innan loftet och 
+	stugan flyttades.</p>
+	<img src="img/Svarvstuga_01.jpg" alt="svarvad trätallrik">
+	<em>Förr var det vanligt att trätallrkikarna man åt på var svarvade i den egna svarvarverkstaden på gården. Bild från <a href="http://www.gardbyslojd.se">www.gardbyslojd.se</a>.</em>
+  </div>
+</div>
+
+<div id="Loftbod-Stall" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close" onclick="closeModal(this)">&times;</span>
+	<h2>Loftbod/Stall</h2>
+	<p>Loftbod, stall samt två rum i övre våningen och svalgång. Portlider binder huset samman med svarvstugan. Loftet var tidigare sammanbyggt med 
+	Erkaspolstugan (10).</p>
+	<p>På Nationalencyklopedin går att läsa om Loftbod:</p>
+	<blockquote>Loftbod, timrad förrådsbyggnad i två våningar. Ingen direktförbindelse finns mellan rummen, utan dessa har öppning blott mot långsidan, där en 
+	svalgång ger tillträde till övervåningens rum. Denna svalgångs räcke och stolpar var ofta konstfullt profilerade. Loftboden är i Sverige känd sedan 
+	medeltiden, inte minst från Bergslagen. Den har vanligen ingått som en del i en fyrsidig gårdsanläggning och har huvudsakligen använts som visthusbod. 
+	Övervåningen har också utnyttjats till sovutrymmen, dock endast sommartid, eftersom loftbodarna alltid saknade eldstäder.</blockquote>
+	<img src="img/Loftbod_02.jpg" alt="Ornässtugan i Dalarna">
+	<em>Loftbod. Ornäsloftet (Ornässtugan) i Ornäs i Dalarna, som ingått i en större, numera försvunnen gårdsanläggning, är det förnämsta exemplet i Sverige 
+	på en medeltida loftbyggnad. Den 25 meter långa loftgången når man via en utvändig trappa.</em>
+  </div>
+</div>
+
+<div>
+	<p><a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" alt="Valid HTML5"/></a></p>
+	<p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"/></a></p>
+</div>
+
+<footer>Copyright © Malungs hembygdsförening <script>document.write((new Date()).getFullYear())</script></footer>
+<script>
+	function updateImg(x) {
+		var myImg = document.getElementById("currentImg");
+		var bildtitel = document.getElementById("bildtitel");
+		bildtitel.innerHTML = x.innerHTML;
+		var namn = x.innerHTML;
+		var namn = namn.replace(/ö/g, "oe"); // g - global för regex
+		var namn = namn.replace(/å/g, "aa");
+		var namn = namn.replace(/ä/g, "ae");
+		myImg.src = "img/"+namn+".jpg";
+	}
+	
+	function showModal(x) {
+		var modal = document.getElementById(x.innerHTML);
+		modal.style.display = "block";
+
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	}
+	
+	function closeModal(x) {
+		x.parentNode.parentNode.style.display = "none";
+	}
+	
+</script>
+
+<script src="js/aktiv.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/keydown.js"></script>
+<script src="js/hamburger.js"></script>
+</body>
+</html>

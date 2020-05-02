@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8"/>
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="description" content="Malungs Hembygdsförening värnar om traktens traditioner genom att arrangera bl a midsommarfirande, att ge ut skriften Skinnarebygd och att sända en podd om gamla Malung"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Malungs hembygdsförening | Hem</title>
+    <link rel="shortcut icon" type="image/png" href="img/favico.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+		<style>
+		.arrow {
+			width: 50px;
+		}
+		
+		.modal {
+			display: none; /* Hidden by default */
+			z-index: 1; /* Sit on top */
+			position: fixed; /* Stay in place */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+		}
+		
+		.modal-content {
+			width: 80%;
+			background-color: #fefefe;
+			margin: 5% auto;
+			padding: 20px;
+		}
+		
+		.close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: black;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		
+		.next {
+			position: fixed;
+			right: 15px;
+			top: 250px;
+		}
+		
+		.previous {
+			position: fixed;
+			left: 15px;
+			top: 250px;
+		}
+		
+		.mitten {
+			width: 80%;
+		}
+	</style>
+
+</head>
+	
+<body>
+<header>
+	<div class="monster"></div>
+	<div id ="welcome">
+		<h1>Malungs hembygdsförening</h1>
+		<p>Välkommen till Malungs hembygdsförening och Malungs hembygdsgård</p>	
+	</div>	
+</header>
+<button type="button" onclick="hamburger()"><img id="hamburger" src="img/hamburger.png" alt="hamburgarikon för mobil navigation"></button>
+<nav id="navigation">
+	<ul>
+		<li class="link"><a href="index.html">Hem</a></li>
+		<li class="link"><a href="historik.html">Historik</a></li>
+		<li class="link"><a href="verksamhet.html">Verksamhet</a></li>
+		<li class="link"><a href="byggnader.html">Byggnader</a></li>
+		<li class="link"><a href="kontakt.html">Kontakt</a></li>
+	</ul>
+</nav>
+<main>
+	<h1>Hem</h1>
+	<div id="content">
+		<strong>Innehåll </strong><button class="showButton" onclick="hideShowContents()">dölj</button>
+		<ol class="orderedList">
+			<li><a href="#valkommen">Välkommen</a></li>
+			<li><a href="#podd">Podd om Gamla Malung</a></li>
+			<li><a href="#skinnarebygd">Skinnarebygd</a></li>
+			<li><a href="#midsommar">Midsommar</a></li>
+		</ol>
+	</div>
+	<aside>
+		<img src="img/gammelgaarden.png" alt="gammalt foto på en bonde">
+		<p>På visningar av gammelgården berättar vi för dig hur människor levde för flera generationer sedan.</p>
+	</aside>
+	<section id="valkommen">
+		<h2>Välkommen till Malungs hembygdsförening och Malungs hembygdsgård</h2>
+		<p>Malung var länge en fattig bondbygd där bönderna slet på sina magra åkrar. Bönderna var självförsörjande när det gällde mat och kläder. Man sådde 
+		och skördade, man vävde och sydde, man hade djur och man odlade grönsaker. Mycket var helt annorlunda mot idag då vi med ett enkelt klick i datorn kan 
+		köpa kläder, skor och andra varor som folk för flera hundra år sedan bara kunde drömma om, om ens det.</p>
+		<p>Följ med oss på en historisk resa där du får lära dig om hur människor i Malung levde förr. Vi har visningar av den vackra gammelgården. Husen 
+		berättar sin historia om de människor som levt och verkat för länge sedan. </p>
+		<p>Kostnad: 50:- för vuxna, barn under 15 år gratis. Kontant eller swish. Välkomna!</p>
+	</section>
+	<section id="podd">
+		<h2>Podd om Gamla Malung</h2>
+		<p>Föreningens sekreterare, Bente Mellquist Danielson, har en podd om Gamla Malung där hon berättar om händelser och personer från förr i bygden.</p>
+		<p>Gå gärna in och lyssna på de berättelser som finns där. Det läggs till nya allteftersom. Malung har en rik historia att lyfta fram, både sådant som 
+		folk i trakten än i dag kommer ihåg men också mycket som är glömt.</p>
+		<iframe class="track-list-iframe" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/566202462&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+	</section>
+	<aside>
+		<img class="Skinnare" src="img/Skinnare_01.jpg" alt="intyg om nominering av Skinnarebygd till Årets Hembygdsbok 2019" onclick="showModal(this)"/>
+		<p>Klicka på bilden för att se ytterligare bilder.</p>
+		<!-- Modal image gallery -->
+		<div class="modal" id="Skinnare">
+			<img class="arrow previous" src="img/previous.png" alt="pil pekar åt vänster" onclick="previous('Skinnare')">
+			<img class="arrow next" src="img/next.png" alt="pil pekar åt höger" onclick="next('Skinnare')">
+		  <!-- Modal content -->
+			<div class="modal-content">
+				<span class="close" onclick="closeModal(this)">&times;</span>
+				<img class="mitten" id="mitten1" src="img/Skinnare_01.jpg" alt="Malungs Hembygdsförening, Skinnarebygd, nominering, redaktion">
+			</div>
+		</div>		
+		
+	</aside>
+	<section id="skinnarebygd">
+		<h2>Skinnarebygd</h2>
+		<p>Inte nog med att Malungs hembygdsförening fyller hundra år i år, vi har även blivit nominerad till Årets hembygdsbok 2019 för Skinnarebygd 2018!</p>
+		<p>Den 27 april på Dalarnas hembygdsförbunds årsmöte tillkännagav styrelsen vilken bok som kommer att representera Dalarna i uttagningen till Årets 
+		hembygdsbok. Vi är så stolta och glada över nomineringen och ser fram emot att deltaga i konkurransen om Årets hembygdsbok. Det är en ära att bli 
+		nominerad.</p>
+		<p>Mass Elisabeth Larsson och Annie Gunnarsson representerade Malungs hembygdsförening vid nomineringen.</p>
+		<p>De som ligger bakom Skinnarebygd 2018 är Kurt Jonsson som nyligen avgått som redaktör och förre ordföranden John-Christer Åhlander plus många 
+		författare. Stort tack för ert engagemang som gjort att boken nu är nominerad.</p>
+		<p>Den nya redaktionen håller som bäst på att förbereda och arbeta fram Skinnarebygd 2019.</p>
+		<h3>Upprop!</h3>
+		<p>Inför utgivningen av Skinnarebygd 2019 efterlyser vi artiklar, uppsatser och andra textgenrer om Malungs kulturliv och historia. Har du något 
+		nedskrivet som du vill se publicerat i Skinnarebygd 2019? Det kan även vara gamla bilder som visar händelser, personer eller plats, där du berättar 
+		om vad bilden visar. <strong>Deadline för bidrag är den 10 augusti!</strong></p>
+		<p>Mejla eller ring Bente Mellquist Danielson på tel. <a href="tel:+460702078828">070-207 88 28</a> eller e-post 
+		<a href="mailto:bente@delta.se">bente@delta.se</a>. <strong>Välkommen med ditt bidrag!</strong></p>
+	</section>
+	<aside>
+		<img class="Midsommar" src="img/Midsommar_01.jpg" alt="Hembygdsföreningens midsommarfirande" onclick="showModal(this)">
+		<p>Klicka på bilden för att se ytterligare bilder.</p>
+		<!-- Modal image gallery -->
+		<div class="modal" id="Midsommar">
+			<img class="arrow previous" src="img/previous.png" alt="pil pekar åt vänster" onclick="previous('Midsommar')">
+			<img class="arrow next" src="img/next.png" alt="pil pekar åt höger" onclick="next('Midsommar')">
+		  <!-- Modal content -->
+			<div class="modal-content">
+				<span class="close" onclick="closeModal(this)">&times;</span>
+				<img class="mitten" id="mitten2" src="img/Midsommar_01.jpg" alt="midsommarfirande">
+			</div>
+		</div>
+	</aside>
+	<section id="midsommar">
+		<h2>Härlig  midsommar vid Malungs gammelgård!</h2>
+		<p>Mycket folk kom på Malungs hembygdsförenings midsommarfirande. Det var sedvanlig majstångsresning och danslekar kring stången. Här fanns alla 
+		generationer samlade, folkdräktsklädda som i jeans.</p>
+		<p>Jonna och Patrik Fridholm underhöll med vackra sommarvisor från scenen i solen. Kaffe och bullar såldes i serveringen. Korv med bröd gick som smör i solen.</p>
+		<p>En mycket lyckad midsommar på gammelgården. Tack alla som kom och ville fira med oss!</p>
+		<iframe src="https://www.youtube.com/embed/4xaNWH6vtgY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe src="https://www.youtube.com/embed/Giq07zWfhQw"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+</main>
+
+<div>
+	<p><a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" alt="Valid HTML5"/></a></p>
+	<p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"/></a></p>
+</div>
+
+<footer>Copyright © Malungs hembygdsförening <script>document.write((new Date()).getFullYear())</script></footer>
+<script>
+	function showModal(x) {
+		var modal = document.getElementById(x.className);
+		modal.style.display = "block";
+
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	}
+	
+	function closeModal(x) {
+		x.parentNode.parentNode.style.display = "none";
+	}
+	
+	function next(mapp) {
+		if (mapp=='Skinnare') {
+			namn = "mitten1";
+		} else if (mapp=="Midsommar") {
+			namn= "mitten2";
+		}
+		var mitten = document.getElementById(namn);
+		var siffra = Number(mitten.src.charAt(mitten.src.length-5));
+		if (siffra < 6) {
+			siffra++;
+		}
+		mitten.src = "img/"+mapp+"_0"+siffra+".jpg";
+	}
+
+	function previous(mapp) {
+		if (mapp=='Skinnare') {
+			namn = "mitten1";
+		} else if (mapp=="Midsommar") {
+			namn= "mitten2";
+		}
+		var mitten = document.getElementById(namn);
+		var siffra = Number(mitten.src.charAt(mitten.src.length-5));
+		if (siffra > 1) {
+			siffra--;
+		}
+		mitten.src = "img/"+mapp+"_0"+siffra+".jpg";
+	}
+
+</script>
+<script src="js/hideShowContents.js"></script>
+<script src="js/aktiv.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/keydown.js"></script>
+<script src="js/hamburger.js"></script>
+</body>
+</html>
